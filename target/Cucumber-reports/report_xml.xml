@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="52.651" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Customers" name="Add New Customer" time="30.958">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as "admin@yourstore.com" and password as "admin"......passed
+And Click on Login..........................................................passed
+Then User can view Dashboard................................................passed
+When User click on customers Menu...........................................passed
+And click on customers Menu item............................................passed
+And click on Add new button.................................................passed
+Then user can view Add new customer page....................................passed
+When user enter customer info...............................................passed
+And click on Save button....................................................passed
+Then user can view confirmation message "The new customer has been added successfully.".passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successful Login with Valid Credentials" time="21.415">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as "admin@yourstore.com" and password as "admin"......passed
+And Click on Login..........................................................passed
+Then Page Title should be "Dashboard / nopCommerce administration"..........passed
+When user click on Logout link..............................................passed
+Then Page Title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
